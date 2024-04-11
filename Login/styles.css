@@ -76,6 +76,11 @@ input::placeholder{
 .button{
     margin-top: 4px;
     background-color: #FF7F32;
+    transition: 0.25s ease;
+}
+
+.button:hover{
+    background-color: rgba(255, 127, 50, 0.7);
 }
 
 .forgot{
@@ -102,10 +107,22 @@ input::placeholder{
     border: 2px solid #FF7F32;
     background-color: #FFFCFA;
     color: #FF7F32;
+    transition: 0.25s ease;
 }
 
 .alternativeLogin button i{
     margin-right: 5px;
+    color: #FF7F32;
+    transition: 0.25s ease;
+}
+
+.alternativeLogin button:hover{
+   background-color: #FF7F32; 
+   color: #EBE7E4;
+}
+
+.alternativeLogin button:hover i{
+   color: #FFFCFA;
 }
 
 .logoLogin{
@@ -113,10 +130,6 @@ input::placeholder{
     max-height: 160px;
     width: 100%;
 }
-
-/* .right{
-    
-} */
 
 .right img{
     max-width: calc(100vw - 450px);
