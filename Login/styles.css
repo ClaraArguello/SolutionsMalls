@@ -131,9 +131,17 @@ input::placeholder{
     width: 100%;
 }
 
-.right img{
-    max-width: calc(100vw - 450px);
+.right{
+    height: 100vh;
+    width: calc(100vw - 450px);
+    background-image: url("./assets/login-bg-1.c47eeb1f.jpg");
     background-size: cover;
-    overflow: hidden;
-    max-height: 100vh;
+    background-position:center ;
+}
+
+.logoSolutions{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 80px;
 }
