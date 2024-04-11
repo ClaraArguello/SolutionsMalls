@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1F1006;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0 !important;
+    height: 100vh;
+}
+
+/* GENERALES */
+button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #1F1006;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* FIN GENERALES */
+
+.login{
+    width: 450px;
+    height: 100vh;
+    background-color: #FFFCFA;
+    padding: 30px 50px 10px;
+}
+
+.title{
+    color: #1F1006;
+    margin-bottom: 20px;
+}
+
+.title h1{
+    font-size: 30px;
+    margin-bottom: 8px;
+
+}
+
+.title p{
+    font-size: 16px;
+}
+
+.input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #EBE7E4;
+    border-radius: 5px;
+    box-shadow: 1px 2px 6px 0px #24130833;
+    margin-bottom: 16px;
+    padding: 5px 10px;
+}
+
+.form .label{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.button{
+    margin-top: 4px;
+    background-color: #FF7F32;
+}
+
+.forgot{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot i{
+    color: #1f1006 ;
+}
+
+.alternativeLogin{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.alternativeLogin button{
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #FF7F32;
+    background-color: #FFFCFA;
+    color: #FF7F32;
+}
+
+.alternativeLogin button i{
+    margin-right: 5px;
+}
+
+.logoLogin{
+    padding: 0 15px;
+    max-height: 160px;
+    width: 100%;
+}
+
+/* .right{
+    
+} */
+
+.right img{
+    max-width: calc(100vw - 450px);
+    background-size: cover;
+    overflow: hidden;
+    max-height: 100vh;
+}
