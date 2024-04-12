@@ -172,7 +172,8 @@ input::placeholder {
 .right {
   height: 100vh;
   width: calc(100vw - 450px);
-  background-image: url("./assets/login-bg-1.c47eeb1f.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("./assets/login-bg-2.0408c624.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -184,7 +185,9 @@ input::placeholder {
   width: 80px;
 }
 
+/* --------------------------------------------- */
 /* ---------------CONTRASEÑA.HTML--------------- */
+/* --------------------------------------------- */
 .back {
   margin: 45px 0;
   display: flex;
@@ -234,4 +237,23 @@ input::placeholder {
   box-shadow: 1px 2px 6px 0px #24130833;
   margin-bottom: 30px;
   padding: 5px 10px;
+}
+
+/* --------------------------------------------- */
+/* ------------------RESPONSIVE----------------- */
+/* --------------------------------------------- */
+
+@media (width <= 450px) {
+  .right {
+    display: none;
+  }
+  .login {
+    padding: 50px;
+  }
+}
+
+@media (width <= 580px) {
+  .logoSolutions {
+    display: none;
+  }
 }
