@@ -1,147 +1,237 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #1F1006;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #1f1006;
 }
 
-body{
-    display: flex;
-    flex-direction: row;
-    margin: 0 !important;
-    height: 100vh;
+::selection {
+  background: #fe5d00;
+  color: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0 !important;
+  height: 100vh;
 }
 
 /* GENERALES */
-button{
-    width: 100%;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    color: #1F1006;
-    font-weight: 500;
-    font-size: 17px;
+button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: #1f1006;
+  font-weight: 500;
+  font-size: 17px;
 }
 
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
+  box-shadow: 1px 2px 10px 0px #24130833;
 }
 
-input::placeholder{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+input::placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* FIN GENERALES */
 
-.login{
-    width: 450px;
-    height: 100vh;
-    background-color: #FFFCFA;
-    padding: 30px 50px 10px;
+.login {
+  width: 450px;
+  height: 100vh;
+  background-color: #fffcfa;
+  padding: 30px 50px 10px;
 }
 
-.title{
-    color: #1F1006;
-    margin-bottom: 20px;
+.title {
+  color: #1f1006;
+  margin-bottom: 20px;
 }
 
-.title h1{
-    font-size: 30px;
-    margin-bottom: 8px;
-
+.title h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
 }
 
-.title p{
-    font-size: 16px;
+.title p {
+  font-size: 16px;
 }
 
-.input{
-    display: block;
-    width: 100%;
-    height: 40px;
-    border: 1px solid #EBE7E4;
-    border-radius: 5px;
-    box-shadow: 1px 2px 6px 0px #24130833;
-    margin-bottom: 16px;
-    padding: 5px 10px;
+.input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ebe7e4;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px 0px #24130833;
+  margin-bottom: 16px;
+  padding: 5px 10px;
 }
 
-.form .label{
-    display: inline-block;
-    margin-bottom: 8px;
+.form .label {
+  display: inline-block;
+  margin-bottom: 8px;
+  /* display: none; */
 }
 
-.button{
-    margin-top: 4px;
-    background-color: #FF7F32;
-    transition: 0.25s ease;
+.button {
+  margin-top: 4px;
+  background-color: #ff7f32;
+  background-color: #418fde;
+  transition: 0.2s ease;
 }
 
-.button:hover{
-    background-color: rgba(255, 127, 50, 0.7);
+.button:hover {
+  background-color: #ff9555;
+  background-color: #67a5e5;
 }
 
-.forgot{
-    margin: 15px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.button:active {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: scale(0.98) translateZ(0);
+  -webkit-transform: scale(0.98) translateZ(0);
 }
 
-.forgot i{
-    color: #1f1006 ;
+.forgot {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s ease;
 }
 
-.alternativeLogin{
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    margin-bottom: 15px;
+.forgot {
+  text-decoration: none;
 }
 
-.alternativeLogin button{
-    width: 100%;
-    border-radius: 5px;
-    border: 2px solid #FF7F32;
-    background-color: #FFFCFA;
-    color: #FF7F32;
-    transition: 0.25s ease;
+.forgot i {
+  color: #1f1006;
 }
 
-.alternativeLogin button i{
-    margin-right: 5px;
-    color: #FF7F32;
-    transition: 0.25s ease;
+.forgot:hover {
+  translate: 2px;
 }
 
-.alternativeLogin button:hover{
-   background-color: #FF7F32; 
-   color: #EBE7E4;
+.forgot:active i,
+.forgot:active span {
+  color: #ff7f32;
 }
 
-.alternativeLogin button:hover i{
-   color: #FFFCFA;
+.alternativeLogin {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
-.logoLogin{
-    padding: 0 15px;
-    max-height: 160px;
-    width: 100%;
+.alternativeLogin button {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #ff7f32;
+  background-color: #fffcfa;
+  color: #ff7f32;
+  transition: 0.25s ease;
 }
 
-.right{
-    height: 100vh;
-    width: calc(100vw - 450px);
-    background-image: url("./assets/login-bg-1.c47eeb1f.jpg");
-    background-size: cover;
-    background-position:center ;
+.alternativeLogin button i {
+  margin-right: 5px;
+  color: #ff7f32;
+  transition: 0.25s ease;
 }
 
-.logoSolutions{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 80px;
+.alternativeLogin button:active {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: scale(0.98) translateZ(0);
+  -webkit-transform: scale(0.98) translateZ(0);
+}
+
+.alternativeLogin button:hover {
+  background-color: #ff7f32;
+  color: #fffcfa;
+}
+
+.alternativeLogin button:hover i {
+  color: #fffcfa;
+}
+
+.logoLogin {
+  padding: 0 15px;
+  max-height: 160px;
+  width: 100%;
+}
+
+.right {
+  height: 100vh;
+  width: calc(100vw - 450px);
+  background-image: url("./assets/login-bg-1.c47eeb1f.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.logoSolutions {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 80px;
+}
+
+/* ---------------CONTRASEÑA.HTML--------------- */
+.back {
+  margin: 45px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.back {
+  text-decoration: none;
+}
+
+.back i {
+  color: #1f1006;
+}
+
+.back:hover {
+  translate: 2px;
+}
+
+.back:active i,
+.back:active span {
+  color: #ff7f32;
+}
+
+.help {
+  color: #1f1006;
+  margin-bottom: 30px;
+}
+
+.help h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.help p {
+  font-size: 16px;
+}
+
+.email {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ebe7e4;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px 0px #24130833;
+  margin-bottom: 30px;
+  padding: 5px 10px;
 }
