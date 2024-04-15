@@ -59,7 +59,7 @@ input::placeholder {
   margin-bottom: 8px;
 }
 
-.title p {
+.p {
   font-size: 16px;
 }
 
@@ -89,7 +89,7 @@ input::placeholder {
 
 .button:hover {
   background-color: #ff9555;
-  background-color: #67a5e5;
+  background-color: #397ac0;
 }
 
 .button:active {
@@ -256,4 +256,68 @@ input::placeholder {
   .logoSolutions {
     display: none;
   }
+}
+
+/* ------------------------------------------------- */
+/* ------------------INCORRECT.HTML----------------- */
+/* ------------------------------------------------- */
+
+.incorrect {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.incorrect > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.fa-xmark {
+  font-size: 40px;
+  color: #ca1533;
+}
+
+.icon {
+  display: flex;
+  width: 120px;
+  height: 120px;
+  background-color: #ebe7e4;
+  border: 1px solid #b6b2af;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.volver {
+  width: 100%;
+}
+
+.text {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.error {
+  padding: 15px;
+  width: 100%;
+  background-color: #ffdde2;
+  border: 1px solid #ffb8c4;
+  color: #680313;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* ------------------------------------------------- */
+/* ------------------INCORRECT.HTML----------------- */
+/* ------------------------------------------------- */
+.fa-thumbs-up {
+  font-size: 40px;
+  color: #1abd5b;
 }
