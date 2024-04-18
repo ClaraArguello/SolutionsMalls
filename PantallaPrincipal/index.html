@@ -1,26 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Solutions Malls</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <img class="logoSolutions" src="./assets/logo.png" alt="Logo Solutions Malls">
-            <div class="navbarHeader">
-                <p class="user">Ususario</p>
-                <img src="./assets/cerrar.png" alt="Cambiar la contraseña">
-                <img src="./assets/informacion.png" alt="Cambiar la contraseña">
-                <img src="./assets/chimenea-de-la-casa.png" alt="Cambiar la contraseña">
-                <img src="./assets/dejar.png" alt="Cambiar la contraseña">
-            </div>
+      <div class="header">
+        <img
+          class="logoSolutions"
+          src="./assets/logo.png"
+          alt="Logo Solutions Malls"
+        />
+        <div class="navbarHeader">
+          <p class="user">Ususario</p>
+          <img src="./assets/cerrar.png" alt="Cambiar la contraseña" />
+          <img src="./assets/informacion.png" alt="Cambiar la contraseña" />
+          <img
+            src="./assets/chimenea-de-la-casa.png"
+            alt="Cambiar la contraseña"
+          />
+          <img src="./assets/dejar.png" alt="Cambiar la contraseña" />
         </div>
-        <div class="empresa"></div>
-        <nav class="nav"></nav>
+      </div>
+      <div class="empresa">
+        <div class="divSelect">
+          <select class="select" name="" id="">
+            <option value="">0.- [TODAS]</option>
+            <option value="">1.- Empresa 001</option>
+            <option value="">2.- Empresa 002</option>
+            <option value="">3.- Empresa 003</option>
+            <option value="">4.- Empresa 004</option>
+            <option value="">5.- Empresa 005</option>
+          </select>
+        </div>
+        <img src="./assets/logoEmpresa.jpg" alt="" class="logoEmpresa" />
+      </div>
+      <nav class="nav">
+        <ul class="list">
+          <li>
+            <p>Contratos</p>
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+          <li>
+            <p>Ventas</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+          <li>
+            <p>Facturación</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+          <li>
+            <p>Ctas cobrar</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+          <li>
+            <p>Compras</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+          <li>
+            <p>Ctas pagar</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+          <li>
+            <p>Tesorería</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+          <li>
+            <p>Contabilidad</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+          <li>
+            <p>Generales</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+          <li>
+            <p>Interfaces</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+          <li>
+            <p>Seguridad</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="25"
+              height="25"
+            >
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M12,15.5a1.993,1.993,0,0,1-1.414-.585L5.293,9.621,6.707,8.207,12,13.5l5.293-5.293,1.414,1.414-5.293,5.293A1.993,1.993,0,0,1,12,15.5Z"
+                />
+              </g>
+            </svg>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main></main>
-</body>
+    <main>
+      <h1>Registro de clientes</h1>
+      <nav class="navMain">
+        <ul>
+          <li>Clientes</li>
+          <li>Comunicaciones</li>
+          <li>Domicilios</li>
+          <li>Vinculaciones</li>
+          <li>Percepciones/Retenciones</li>
+          <li>Exenciones</li>
+          <li>Rev. Impositivas</li>
+          <li>Insc. Impositivas</li>
+          <li>Cuentas</li>
+          <li>Constancias</li>
+        </ul>
+      </nav>
+      <section class="icons">
+        <div>
+          <svg
+            id="Layer_1"
+            height="25"
+            viewBox="0 0 24 24"
+            width="25"
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+          >
+            <path
+              d="m15 24-6-4.5v-5.12l-8-9v-2.38a3 3 0 0 1 3-3h16a3 3 0 0 1 3 3v2.38l-8 9zm-4-5.5 2 1.5v-6.38l8-9v-1.62a1 1 0 0 0 -1-1h-16a1 1 0 0 0 -1 1v1.62l8 9z"
+            />
+          </svg>
+        </div>
+        <div>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g id="_01_align_center" data-name="01 align center">
+              <path
+                d="M14.414,0H5A3,3,0,0,0,2,3V24H22V7.586ZM15,3.414,18.586,7H15ZM4,22V3A1,1,0,0,1,5,2h8V9h7V22Z"
+              />
+            </g>
+          </svg>
+        </div>
+        <div>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Layer_1"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="m2,3c0-.551.449-1,1-1h8v7h7v1.005c.586-.432,1.272-.733,2-.877v-1.542L12.414,0H3C1.346,0,0,1.346,0,3v21h9v-2H2V3Zm11,.414l3.586,3.586h-3.586v-3.586Zm10.122,8.465c-1.134-1.134-3.11-1.134-4.243,0l-7.879,7.878v4.243h4.243l7.878-7.878c.567-.567.879-1.32.879-2.122s-.312-1.555-.878-2.121Zm-1.415,2.828l-7.292,7.293h-1.415v-1.415l7.293-7.292c.377-.378,1.036-.378,1.414,0,.189.188.293.439.293.707s-.104.518-.293.707Z"
+            />
+          </svg>
+        </div>
+        <div>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g id="_01_align_center" data-name="01 align center">
+              <path
+                d="M22,4H17V2a2,2,0,0,0-2-2H9A2,2,0,0,0,7,2V4H2V6H4V21a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V6h2ZM9,2h6V4H9Zm9,19a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V6H18Z"
+              />
+              <rect x="9" y="10" width="2" height="8" />
+              <rect x="13" y="10" width="2" height="8" />
+            </g>
+          </svg>
+        </div>
+        <div>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <g id="_01_align_center" data-name="01 align center">
+              <path
+                d="M24,9a3,3,0,0,0-3-3H19V0H5V6H3A3,3,0,0,0,0,9V21H5v3H19V21h5ZM7,2H17V6H7ZM17,22H7V16H17Zm5-3H19V14H5v5H2V9A1,1,0,0,1,3,8H21a1,1,0,0,1,1,1Z"
+              />
+              <rect x="15" y="10" width="4" height="2" />
+            </g>
+          </svg>
+        </div>
+        <div>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Layer_1"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M14.41,0H5c-1.65,0-3,1.35-3,3V24H22V7.59L14.41,0Zm.59,3.41l3.59,3.59h-3.59V3.41Zm5,18.59H4V3c0-.55,.45-1,1-1H13v7h7v13ZM12,13.59l1.6-2.59h2.35l-2.77,4.5,2.77,4.5h-2.35l-1.6-2.59-1.6,2.59h-2.35l2.77-4.5-2.77-4.5h2.35l1.6,2.59Z"
+            />
+          </svg>
+        </div>
+        <div>
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            id="Layer_1"
+            data-name="Layer 1"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M14.081,5.586.9,18.769A3.064,3.064,0,0,0,5.23,23.1L18.414,9.919Zm1.505,4.333L13,12.505,11.5,11l2.586-2.586ZM3.816,21.688a1.087,1.087,0,0,1-1.5,0,1.062,1.062,0,0,1,0-1.5l7.769-7.77,1.505,1.505Zm17.517-7.06L24,15.962,21.333,17.3,20,19.962,18.667,17.3,16,15.962l2.667-1.334L20,11.962ZM6.667,5.333,4,4,6.667,2.667,8,0,9.333,2.667,12,4,9.333,5.333,8,8Zm12.666-.666L17,3.5l2.333-1.167L20.5,0l1.167,2.333L24,3.5,21.667,4.667,20.5,7Z"
+            />
+          </svg>
+        </div>
+      </section>
+
+      <details open>
+        <summary>Filtros</summary>
+        <form>
+          <div>
+            <label for="">Codigo</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="">Razón Social</label>
+            <input type="text" />
+          </div>
+          <div>
+            <label for="">Tipo Identificación</label>
+            <select name="" id="">
+              <option value="">[TODOS]</option>
+              <option value="">CUIT</option>
+              <option value="">LE</option>
+              <option value="">LC</option>
+              <option value="">DNI</option>
+              <option value="">PAS</option>
+              <option value="">S/IDE</option>
+              <option value="">CI</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Nro. Identificación</label>
+            <input type="text" />
+          </div>
+        </form>
+      </details>
+      <section class="tabla">
+        <table>
+          <tr>
+            <th>Código</th>
+            <th>Razón Social</th>
+            <th>Tipo Identificación</th>
+            <th>Nro. Identificación</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+        </table>
+
+        <p>1933 elementos encontrados, listados del 1 al 15.</p>
+
+        <div class="pagination">
+          <ul>
+            <li>
+              <a href="#"
+                ><?xml version="1.0" encoding="UTF-8"?>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g id="_01_align_center" data-name="01 align center">
+                    <path
+                      d="M3.121,11.293,13.013,1.4,11.6-.013,1.707,9.879a3,3,0,0,0,0,4.242l9.885,9.885,1.414-1.414L3.122,12.707A1,1,0,0,1,3.121,11.293Z"
+                    />
+                    <path
+                      d="M23,1.417,21.583,0l-11.29,11.29a1,1,0,0,0,0,1.414L21.584,24,23,22.584,12.414,12Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><?xml version="1.0" encoding="UTF-8"?>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g id="_01_align_center" data-name="01 align center">
+                    <path
+                      d="M16.752,23.994,6.879,14.121a3,3,0,0,1,0-4.242L16.746.012,18.16,1.426,8.293,11.293a1,1,0,0,0,0,1.414l9.873,9.873Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li>
+              <a href="#"
+                ><?xml version="1.0" encoding="UTF-8"?>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g id="_01_align_center" data-name="01 align center">
+                    <path
+                      d="M7.412,24,6,22.588l9.881-9.881a1,1,0,0,0,0-1.414L6.017,1.431,7.431.017l9.862,9.862a3,3,0,0,1,0,4.242Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><?xml version="1.0" encoding="UTF-8"?>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <g id="_01_align_center" data-name="01 align center">
+                    <path
+                      d="M22.121,9.879,12.246,0,10.832,1.418l9.875,9.875a1,1,0,0,1,0,1.414L10.819,22.6l1.414,1.414,9.888-9.888a3,3,0,0,0,0-4.242Z"
+                    />
+                    <path
+                      d="M13.535,11.293,2.262.019.847,1.433,11.414,12,.836,22.578,2.25,23.993,13.535,12.707A1,1,0,0,0,13.535,11.293Z"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
