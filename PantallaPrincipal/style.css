@@ -129,6 +129,7 @@ body {
   align-items: center;
   color: #fffcfa;
   fill: #fffcfa;
+  position: relative;
 }
 
 .list > li > svg {
@@ -136,10 +137,105 @@ body {
   width: 25px;
 }
 
-/* .list > li:hover {
-  color: #ff7f32;
-  fill: #ff7f32;
-} */
+/* ------------------------------------------------------- */
+/* -----------------------DESPLEGABLE--------------------- */
+/* -------------------------Nivel 1----------------------- */
+
+.nivel1 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #322924;
+  z-index: 1;
+  width: max-content;
+  border-radius: 5px;
+  list-style-type: none;
+  border: 2px solid #fffcfa;
+}
+
+.nivel1 > li {
+  float: none;
+  padding: 0 5px;
+  position: relative;
+}
+
+.nivel1 > li > div {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+.nivel1 > li > div:hover {
+  background-color: rgba(165, 157, 152, 0.1);
+  border-radius: 5px;
+}
+
+.nivel1 > li > div > svg {
+  transform: rotate(270deg);
+}
+
+.list > li:hover > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+/* -------------------------Nivel 2----------------------- */
+
+.nivel2 {
+  display: none;
+  position: absolute;
+  top: -6px;
+  left: 100%;
+  background-color: #322924;
+  z-index: 1;
+  width: max-content;
+  border-radius: 5px;
+  list-style-type: none;
+  border: 2px solid #fffcfa;
+}
+
+.nivel2 > li {
+  float: none;
+  padding: 0 5px;
+  position: relative;
+}
+
+.nivel2 > li > div {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+}
+
+.nivel2 > li:hover > div {
+  background-color: rgba(165, 157, 152, 0.1);
+  border-radius: 5px;
+}
+
+.nivel2 > li > div > svg {
+  transform: rotate(270deg);
+}
+
+/* -------------------------Nivel 2----------------------- */
+
+.nivel2 > li:hover > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+.nivel1 > li:hover > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
 
 /* ------------------------------------------------------- */
 /* ------------------------------------------------------- */
@@ -332,6 +428,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
+  border-radius: 5px;
 }
 
 th {
