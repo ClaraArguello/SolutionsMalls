@@ -83,13 +83,11 @@ input::placeholder {
 .button {
   margin-top: 4px;
   background-color: #ff7f32;
-  background-color: #418fde;
   transition: 0.2s ease;
 }
 
 .button:hover {
-  background-color: #ff9555;
-  background-color: #397ac0;
+  background-color: #f36818;
 }
 
 .button:active {
@@ -135,15 +133,15 @@ input::placeholder {
 .alternativeLogin button {
   width: 100%;
   border-radius: 5px;
-  border: 2px solid #ff7f32;
+  border: 2px solid #342923;
   background-color: #fffcfa;
-  color: #ff7f32;
+  color: #342923;
   transition: 0.25s ease;
 }
 
 .alternativeLogin button i {
   margin-right: 5px;
-  color: #ff7f32;
+  color: #342923;
   transition: 0.25s ease;
 }
 
@@ -155,7 +153,7 @@ input::placeholder {
 }
 
 .alternativeLogin button:hover {
-  background-color: #ff7f32;
+  background-color: #342923;
   color: #fffcfa;
 }
 
