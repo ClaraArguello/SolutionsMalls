@@ -11,18 +11,15 @@
       <div class="header">
         <img
           class="logoSolutions"
-          src="./assets/logo.png"
+          src="../assets/logo.png"
           alt="Logo Solutions Malls"
         />
         <div class="navbarHeader">
           <p class="user">Ususario</p>
-          <img src="./assets/cerrar.png" alt="Cambiar la contraseña" />
-          <img src="./assets/informacion.png" alt="Cambiar la contraseña" />
-          <img
-            src="./assets/chimenea-de-la-casa.png"
-            alt="Cambiar la contraseña"
-          />
-          <img src="./assets/dejar.png" alt="Cambiar la contraseña" />
+          <img src="../assets/cerrar.png" alt="Cerrar" />
+          <img src="../assets/informacion.png" alt="Informacion" />
+          <img src="../assets/chimenea-de-la-casa.png" alt="Casa" />
+          <img src="../assets/dejar.png" alt="Salir" />
         </div>
       </div>
       <div class="empresa">
@@ -291,12 +288,27 @@
         <summary>Filtros</summary>
         <form>
           <div>
-            <label for="codigo">Codigo</label>
-            <input type="text" id="codigo" />
+            <label for="punto">Punto</label>
+            <input type="text" name="punto" id="punto" />
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g id="_01_align_center" data-name="01 align center">
+                <path
+                  d="M24,22.586l-6.262-6.262a10.016,10.016,0,1,0-1.414,1.414L22.586,24ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"
+                />
+              </g>
+            </svg>
+            <input type="text" name="punto" id="punto" />
           </div>
           <div>
-            <label for="razonSocial">Razón Social</label>
-            <input type="text" id="razonSocial" />
+            <div>
+              <label for="sectorComercial">Sector Comercial</label>
+              <input type="text" id="sectorComercial" />
+            </div>
+            <div>
+              <label for="unidad">Unidad</label>
+              <input type="text" id="unidad" />
+            </div>
           </div>
           <div>
             <label for="tipoIdentificacion">Tipo Identificación</label>

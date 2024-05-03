@@ -288,7 +288,7 @@ details > form select {
   appearance: none;
 }
 
-details > form > div:nth-child(3)::after {
+details > form > .selectFiltros::after {
   position: absolute;
   height: 25px;
   width: 25px;
@@ -301,7 +301,7 @@ details > form > div:nth-child(3)::after {
   background-position: right center;
 }
 
-details > form > div:nth-child(3) {
+details > form > .selectFiltros {
   position: relative;
 }
 
