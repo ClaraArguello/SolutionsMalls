@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #fffcfa;
+  min-height: 100vh;
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ---------------------HEADER---------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+.header {
+  height: 60px;
+  background-color: #322924;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoSolutions {
+  height: 40px;
+  margin: 10px 20px;
+}
+
+.navbarHeader {
+  display: flex;
+  margin: 0 20px;
+  align-items: center;
+  gap: 15px;
+}
+
+.user {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbarHeader img {
+  height: 20px;
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------EMPRESA--------------------------- */
+/* ------------------------------------------------------- */
+
+.empresa {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.divSelect {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2;
+  position: relative;
+}
+
+.logoEmpresa {
+  justify-self: flex-end;
+  height: 40px;
+  grid-column: 3;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.select {
+  background-color: #fffcfa;
+  height: 30px;
+  width: 320px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: none;
+  box-shadow: 1px 2px 6px 0px #24130833;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+.select > option {
+  background-color: #fffcfa;
+}
+
+.divSelect::after {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  content: "";
+  right: 10px;
+  pointer-events: none;
+  background-image: url(./assets/angulo-pequeno-hacia-abajo.svg);
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: right center;
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------NAVBAR---------------------------- */
+/* ------------------------------------------------------- */
+
+.nav {
+  min-height: 35px;
+  background-color: #322924;
+}
+
+.list {
+  display: flex;
+  margin: 0 50px;
+  justify-content: space-between;
+  min-height: 35px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.list > li {
+  display: flex;
+  align-items: center;
+  color: #fffcfa;
+  fill: #fffcfa;
+  padding-left: 5px;
+}
+
+.list > li:hover {
+  color: #1f1006;
+  fill: #1f1006;
+  background-color: #ebe7e4;
+}
+
+.list > li > svg {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+/* ------------------------------------------------------- */
+/* -----------------------DESPLEGABLE--------------------- */
+/* -------------------------Nivel 1----------------------- */
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -5px;
+  background-color: #ebe7e4;
+  z-index: 1;
+  width: 93vw;
+  border-radius: 5px;
+  height: max-content;
+  min-height: 550px;
+  justify-content: space-around;
+  border: 2px solid #fffcfa;
+}
+
+.list > li:hover > .submenu {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  padding: 5px 0;
+}
+
+/* ------------------------NIVEL 1------------------------ */
+
+.nivel1 > li {
+  min-width: max-content;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  float: none;
+  margin: 0 5px;
+}
+
+.nivel1 > li > label:hover,
+.nivel1 > li > input:checked ~ label {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.nivel1 > li > label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.nivel1 > li > label > svg {
+  height: 15px;
+}
+
+.nivel1 {
+  width: max-content;
+  position: relative;
+  border-right: 1px solid #1f1006;
+}
+
+.list > li:hover > ul {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0;
+}
+
+/* ---------------------NIVEL 2--------------------------- */
+.nivel2 {
+  display: none;
+  width: max-content;
+  position: relative;
+  border-right: 1px solid #1f1006;
+  position: absolute;
+  list-style-type: none;
+  width: max-content;
+  left: 110%;
+  top: 14px;
+}
+
+.nivel2 > li {
+  min-width: max-content;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  float: none;
+  margin: 0 5px;
+}
+
+.nivel2 > li > label:hover,
+.nivel2 > li > input:checked ~ label {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.nivel2 > li > label {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.nivel2 > li > label > svg {
+  height: 15px;
+}
+
+.nivel2 > li > input[type="radio"] {
+  display: none;
+}
+
+.nivel1 > li > input[type="radio"]:checked ~ .nivel2 {
+  display: block;
+  height: 95%;
+}
+
+.nivel2 > li > input[type="radio"]:checked ~ .links {
+  display: block;
+  column-count: 3;
+  column-gap: 10px;
+  column-gap: 15px;
+}
+/* -------------------LINKS------------------------------- */
+
+.links {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  width: max-content;
+  left: 120%;
+  top: 7px;
+}
+
+.links > li {
+  padding: 5px;
+  font-size: 13px;
+}
+
+.links > li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.nivel1 > li > input[type="radio"] {
+  display: none;
+}
+
+.nivel1 > li > input[type="radio"]:checked ~ .links {
+  display: block;
+  column-count: 3;
+  column-gap: 20px;
+}
+
+@media screen and (max-width: 1350px) {
+  .nivel1 > li > input[type="radio"]:checked ~ .links,
+  .nivel2 > li > input[type="radio"]:checked ~ .links {
+    column-count: 2;
+  }
+  .submenu {
+    height: 800px;
+  }
+  .list > li {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .list > li > svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .list > li {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .nivel1 > li > input[type="radio"]:checked ~ .links,
+  .nivel2 > li > input[type="radio"]:checked ~ .links {
+    column-count: 1;
+  }
+  .submenu {
+    height: 1550px;
+  }
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ---------------------MAIN------------------------------ */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 145px);
+}
+
+main > div > img {
+  height: 200px;
+}
