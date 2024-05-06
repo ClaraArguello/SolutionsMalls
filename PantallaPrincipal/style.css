@@ -103,7 +103,7 @@ body {
   content: "";
   right: 10px;
   pointer-events: none;
-  background-image: url(./assets/angulo-pequeno-hacia-abajo.svg);
+  background-image: url(../assets/angulo-pequeno-hacia-abajo.svg);
   background-repeat: no-repeat;
   background-size: 23px;
   background-position: right center;

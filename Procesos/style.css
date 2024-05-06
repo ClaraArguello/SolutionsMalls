@@ -102,7 +102,7 @@ body {
   content: "";
   right: 10px;
   pointer-events: none;
-  background-image: url(./assets/angulo-pequeno-hacia-abajo.svg);
+  background-image: url(../assets/angulo-pequeno-hacia-abajo.svg);
   background-repeat: no-repeat;
   background-size: 23px;
   background-position: right center;
@@ -247,28 +247,32 @@ h1 {
 details > form {
   padding: 0 15px 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   overflow: auto;
   position: relative;
   gap: 15px;
 }
 
-details > form > div:first-child {
-  width: 16%;
-}
 details > form > div {
-  width: 28%;
-  padding: 0 5px;
   display: flex;
-  gap: 10px;
+  flex-direction: row;
 }
 
-details > form label {
-  min-width: fit-content;
+details > form > div > div {
+  display: flex;
+  flex-direction: row;
 }
 
-details > form input,
+details > form > div > div > svg {
+  width: 50px;
+}
+
+details > form > div > div > label {
+  width: max-content;
+}
+
+details > form input[type="text"],
 details > form select {
   border-radius: 5px;
   border: none;
@@ -288,20 +292,20 @@ details > form select {
   appearance: none;
 }
 
-details > form > .selectFiltros::after {
+details > form > #vencidos::after {
   position: absolute;
   height: 25px;
   width: 25px;
   content: "";
   right: 10px;
   pointer-events: none;
-  background-image: url(./assets/angulo-pequeno-hacia-abajo.svg);
+  background-image: url(../assets/angulo-pequeno-hacia-abajo.svg);
   background-repeat: no-repeat;
   background-size: 20px;
   background-position: right center;
 }
 
-details > form > .selectFiltros {
+details > form > #vencidos {
   position: relative;
 }
 
@@ -347,7 +351,7 @@ summary::after {
   content: "";
   width: 18px;
   height: 18px;
-  background: url(./assets/angulo-pequeno-hacia-abajo.svg);
+  background: url(../assets/angulo-pequeno-hacia-abajo.svg);
   background-size: cover;
   transition: 0.2s;
   margin-left: 2px;
