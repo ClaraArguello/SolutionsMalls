@@ -356,7 +356,7 @@ details > form {
   box-shadow: 1px 1px 6px 0px #24130833;
   appearance: none;
   background-color: #fff;
-  background-image: url(./assets/controlar.svg);
+  background-image: url("../assets/icons/controlar.svg");
   background-size: 15px;
   background-repeat: no-repeat;
   background-position: center;
