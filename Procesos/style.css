@@ -219,7 +219,7 @@ h1 {
 .icons {
   display: flex;
   gap: 15px;
-  margin-top: 15px;
+  margin: 15px 0px;
 }
 
 .icons > div > svg {
@@ -244,6 +244,8 @@ h1 {
 /* ---------------------DETAILS--------------------------- */
 /* ------------------------------------------------------- */
 
+/* ---------------------Filtros--------------------------- */
+
 details > form {
   padding: 0 15px 10px;
   display: flex;
@@ -254,35 +256,51 @@ details > form {
   gap: 15px;
 }
 
-details > form > div {
+.filtros > form > div {
   display: flex;
   flex-direction: row;
+  gap: 29px;
 }
 
-details > form > div > div {
+.filtros .itemForm {
   display: flex;
   flex-direction: row;
+  gap: 10px;
+  width: 49%;
 }
 
-details > form > div > div > svg {
-  width: 50px;
+.filtros .itemForm > svg {
+  width: 23px;
+  min-width: 23px;
 }
 
-details > form > div > div > label {
-  width: max-content;
+.filtros .itemForm > label {
+  width: 120px;
+  min-width: 120px;
 }
 
-details > form input[type="text"],
-details > form select {
+.filtros .itemForm > input:first-of-type,
+.filtros .itemForm > .selectFiltros {
+  width: 20%;
+  min-width: 20%;
+}
+
+.filtros .itemForm > input:last-of-type {
+  width: -webkit-fill-available;
+  width: fill-available;
+  width: -moz-available;
+}
+
+.filtros > form input[type="text"],
+.filtros > form select {
   border-radius: 5px;
   border: none;
   height: 25px;
   padding: 0 5px;
   box-shadow: 1px 1px 6px 0px #24130833;
-  width: 100%;
 }
 
-details > form select {
+.filtros > form select {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -290,14 +308,16 @@ details > form select {
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
+  width: 100%;
 }
 
-details > form > #vencidos::after {
+.filtros > form .selectFiltros::after {
   position: absolute;
   height: 25px;
   width: 25px;
   content: "";
-  right: 10px;
+  right: 5px;
+  top: 1px;
   pointer-events: none;
   background-image: url(../assets/angulo-pequeno-hacia-abajo.svg);
   background-repeat: no-repeat;
@@ -305,21 +325,45 @@ details > form > #vencidos::after {
   background-position: right center;
 }
 
-details > form > #vencidos {
+.filtros > form .selectFiltros {
   position: relative;
 }
 
-details > form select:focus {
+.filtros > form select:focus {
   outline: none;
 }
 
-details > form select::-ms-expand {
+.filtros > form select::-ms-expand {
   display: none;
 }
 
-details > form input:focus,
-details > form select:focus {
+.filtros > form input:focus,
+.filtros > form select:focus {
   outline: none;
+}
+
+.filtros .itemForm > .checkboxList > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.filtros .itemForm input[type="checkbox"] {
+  height: 18px;
+  width: 18px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 1px 1px 6px 0px #24130833;
+  appearance: none;
+  background-color: #fff;
+  background-image: url(./assets/controlar.svg);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filtros .itemForm input[type="checkbox"]:checked {
+  background-color: #ff7f32;
 }
 
 summary {
@@ -335,7 +379,7 @@ summary::-webkit-details-marker {
 
 details {
   background-color: #ebe7e4;
-  margin-top: 15px;
+  margin-top: 5px;
   user-select: none;
 }
 
@@ -360,6 +404,256 @@ summary::after {
 
 details[open] > summary::after {
   transform: rotate(180deg);
+}
+
+/* ---------------------Procesos-------------------------- */
+.procesos > form > div {
+  display: flex;
+  gap: 30px;
+}
+
+.procesos .itemForm {
+  display: flex;
+  gap: 5px;
+}
+
+.procesos .itemForm > label {
+  width: max-content;
+}
+
+.procesos .itemForm > svg {
+  width: 20px;
+}
+
+.procesos .itemForm > input:not(:first-child):not(:last-child) {
+  width: 95px;
+}
+
+.procesos > form input:focus,
+.procesos > form select:focus {
+  outline: none;
+}
+
+.procesos > form input[type="text"],
+.procesos > form select {
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  padding: 0 5px;
+  box-shadow: 1px 1px 6px 0px #24130833;
+}
+
+.procesos > form select {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.procesos > form .selectFiltros::after {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  content: "";
+  right: 5px;
+  top: 1px;
+  pointer-events: none;
+  background-image: url(../assets/angulo-pequeno-hacia-abajo.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: right center;
+}
+
+.procesos > form .selectFiltros {
+  position: relative;
+}
+
+.procesos > form select:focus {
+  outline: none;
+}
+
+.procesos > form select::-ms-expand {
+  display: none;
+}
+
+.procesos > form .icons {
+  display: inline;
+  margin: 0;
+}
+
+.procesos > form .icons > svg {
+  width: 17px;
+}
+
+.procesos > form {
+  gap: 5px;
+}
+
+/* ----------------------CONTRATOS------------------------ */
+.contratos > form > div {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.contratos .itemForm {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 49%;
+}
+
+.contratos .itemForm > label {
+  width: max-content;
+}
+
+.contratos .itemForm > svg {
+  width: 20px;
+  min-width: 20px;
+}
+
+.contratos > form .icons {
+  display: inline;
+  margin: 0;
+}
+
+.contratos > form .icons > svg {
+  width: 17px;
+}
+
+.contratos > form {
+  gap: 5px;
+}
+
+.contratos > form input:focus,
+.contratos > form select:focus {
+  outline: none;
+}
+
+.contratos > form input[type="text"],
+.contratos > form select {
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  padding: 0 5px;
+  box-shadow: 1px 1px 6px 0px #24130833;
+}
+
+.contratos > form select {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.contratos > form .selectFiltros::after {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  content: "";
+  right: 5px;
+  top: 1px;
+  pointer-events: none;
+  background-image: url(../assets/angulo-pequeno-hacia-abajo.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: right center;
+}
+
+.contratos > form .selectFiltros {
+  position: relative;
+  width: 20%;
+}
+
+.contratos > form select:focus {
+  outline: none;
+}
+
+.contratos > form select::-ms-expand {
+  display: none;
+}
+
+.contratos .itemForm > input:not(:first-child) {
+  width: -webkit-fill-available;
+  width: fill-available;
+  width: -moz-available;
+}
+
+/* -----------------------LOCALES------------------------ */
+.locales > form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.locales .itemForm {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 49%;
+}
+
+.locales > form input:focus,
+.locales > form select:focus {
+  outline: none;
+}
+
+.locales > form input[type="text"],
+.locales > form select {
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  padding: 0 5px;
+  box-shadow: 1px 1px 6px 0px #24130833;
+}
+
+.locales > form select {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.locales > form .selectFiltros::after {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  content: "";
+  right: 5px;
+  top: 1px;
+  pointer-events: none;
+  background-image: url(../assets/angulo-pequeno-hacia-abajo.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: right center;
+}
+
+.locales > form .selectFiltros {
+  position: relative;
+  width: 20%;
+}
+
+.locales > form select:focus {
+  outline: none;
+}
+
+.locales > form select::-ms-expand {
+  display: none;
 }
 
 /* ------------------------------------------------------- */
