@@ -172,6 +172,7 @@ body {
 
 main {
   margin: 0 50px;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -436,8 +437,7 @@ colgroup col {
   flex-direction: row;
   justify-content: center;
   gap: 0px;
-  margin-top: 15px;
-  margin-bottom: 35px;
+  margin-top: 10px;
 }
 
 .pagination ul li {
