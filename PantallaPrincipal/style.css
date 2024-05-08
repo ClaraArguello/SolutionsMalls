@@ -348,6 +348,7 @@ main {
   justify-content: center;
   align-items: center;
   height: calc(100vh - 145px);
+  padding: 50px 0;
 }
 
 main > div > img {
