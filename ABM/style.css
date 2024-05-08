@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #fffcfa;
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ---------------------HEADER---------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+.header {
+  height: 60px;
+  background-color: #322924;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoSolutions {
+  height: 40px;
+  margin: 10px 20px;
+}
+
+.navbarHeader {
+  display: flex;
+  margin: 0 20px;
+  align-items: center;
+  gap: 15px;
+}
+
+.user {
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbarHeader img {
+  height: 20px;
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------EMPRESA--------------------------- */
+/* ------------------------------------------------------- */
+
+.empresa {
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.divSelect {
+  justify-self: center;
+  align-self: center;
+  grid-column: 2;
+  position: relative;
+}
+
+.logoEmpresa {
+  justify-self: flex-end;
+  height: 40px;
+  grid-column: 3;
+  align-self: center;
+  margin-right: 20px;
+}
+
+.select {
+  background-color: #fffcfa;
+  height: 30px;
+  width: 320px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  border: none;
+  box-shadow: 1px 2px 6px 0px #24130833;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+.select > option {
+  background-color: #fffcfa;
+}
+
+.divSelect::after {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  content: "";
+  right: 10px;
+  pointer-events: none;
+  background-image: url(../assets/angulo-pequeno-hacia-abajo.svg);
+  background-repeat: no-repeat;
+  background-size: 23px;
+  background-position: right center;
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------NAVBAR---------------------------- */
+/* ------------------------------------------------------- */
+
+.nav {
+  min-height: 35px;
+  background-color: #322924;
+}
+
+.list {
+  display: flex;
+  margin: 0 50px;
+  justify-content: space-between;
+  min-height: 35px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.list > li {
+  display: flex;
+  align-items: center;
+  color: #fffcfa;
+  fill: #fffcfa;
+  padding-left: 5px;
+}
+
+.list > li:hover {
+  color: #1f1006;
+  fill: #1f1006;
+  background-color: #ebe7e4;
+}
+
+.list > li > svg {
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 1350px) {
+  .list > li {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .list > li > svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .list > li {
+    font-size: 13px;
+  }
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ---------------------MAIN------------------------------ */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+main {
+  margin: 0 50px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------NAV---------------------------- */
+/* ------------------------------------------------------- */
+
+.navMain > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navMain > ul > li {
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.navMain > ul > li:hover {
+  transition: 0.1s;
+  border-bottom: 3px solid #ff7f32;
+}
+
+@media screen and (max-width: 1200px) {
+  .navMain > ul > li {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .navMain > ul > li {
+    font-size: 13px;
+  }
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------ICONS----------------------------- */
+/* ------------------------------------------------------- */
+
+.icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.icons > div > svg {
+  height: 22px;
+  fill: #322924;
+  cursor: pointer;
+}
+
+.icons > div > svg:hover {
+  fill: #ff7f32;
+}
+
+#Layer_11 > path {
+  fill: #a59d98;
+}
+
+.icons > div > svg:hover > #Layer_11 > path {
+  fill: #ff7f32;
+}
+
+/* ------------------------------------------------------- */
+/* ---------------------DETAILS--------------------------- */
+/* ------------------------------------------------------- */
+
+details > form {
+  padding: 0 15px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: auto;
+  position: relative;
+  gap: 15px;
+}
+
+details > form > div:first-child {
+  width: 16%;
+}
+details > form > div {
+  width: 28%;
+  padding: 0 5px;
+  display: flex;
+  gap: 10px;
+}
+
+details > form label {
+  min-width: fit-content;
+}
+
+details > form input,
+details > form select {
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  padding: 0 5px;
+  box-shadow: 1px 1px 6px 0px #24130833;
+  width: 100%;
+}
+
+details > form select {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+details > form > .selectFiltros::after {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  content: "";
+  right: 10px;
+  pointer-events: none;
+  background-image: url(../assets/angulo-pequeno-hacia-abajo.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: right center;
+}
+
+details > form > .selectFiltros {
+  position: relative;
+}
+
+details > form select:focus {
+  outline: none;
+}
+
+details > form select::-ms-expand {
+  display: none;
+}
+
+details > form input:focus,
+details > form select:focus {
+  outline: none;
+}
+
+summary {
+  list-style: none;
+  height: 35px;
+  padding: 5px 10px;
+  display: flex;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details {
+  background-color: #ebe7e4;
+  margin-top: 15px;
+  user-select: none;
+}
+
+details:focus {
+  outline: none;
+}
+
+summary:focus-visible {
+  outline: none;
+}
+
+summary::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background: url(../assets/angulo-pequeno-hacia-abajo.svg);
+  background-size: cover;
+  transition: 0.2s;
+  margin-left: 2px;
+  margin-top: 4px;
+}
+
+details[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------TABLA-------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+.tabla {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+th {
+  background-color: #322924;
+  border: 1px solid #a59d98;
+  color: #fffcfa;
+  padding: 5px 20px;
+  text-align: left;
+}
+
+th > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+th > div > svg {
+  width: 20px;
+  fill: #fffcfa;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ebe7e4;
+}
+
+table tr:nth-child(even) {
+  background-color: #fffcfa;
+}
+
+td {
+  padding: 2px 15px;
+}
+
+table th:nth-child(1) {
+  width: 16%;
+}
+
+table th:nth-child(2),
+table th:nth-child(3),
+table th:nth-child(4) {
+  width: 28%;
+}
+
+colgroup col {
+  border: 1px solid #a59d98;
+}
+
+/* ------------------------------------------------------- */
+/* --------------------ELEMENTOS-------------------------- */
+/* ------------------------------------------------------- */
+
+.tabla > p {
+  align-self: center;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* ------------------------------------------------------- */
+/* ----------------------PAGINATION----------------------- */
+/* ------------------------------------------------------- */
+.pagination {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.pagination > span {
+  position: relative;
+}
+
+.pagination > span > select {
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+  border: 1px solid #ebe7e4;
+  padding: 0 10px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+.pagination > span::after {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  content: "";
+  right: 10px;
+  top: 11px;
+  pointer-events: none;
+  background-image: url(../assets/angulo-pequeno-hacia-abajo.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: right center;
+}
+
+.pagination > span > select:focus {
+  outline: none;
+}
+
+.pagination > span > select > option {
+  font-size: 17px;
+}
+
+.pagination li svg {
+  height: 15px;
+  margin-top: 5px;
+  fill: #322924;
+}
+
+.pagination ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px;
+}
+
+.pagination ul li {
+  border: 1px solid #ebe7e4;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination ul li:nth-child(3) {
+  width: 120px;
+}
+
+.pagination > ul > li > a {
+  text-decoration: none;
+  color: #322924;
+}
+
+.pagination > ul > li:not(:nth-child(3)):hover {
+  background-color: #ff7f32;
+}
+
+.pagination > ul > li:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination > ul > li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
