@@ -1,0 +1,101 @@
+$flaticon_grafico-font: "flaticon_grafico";
+
+@font-face {
+    font-family: $flaticon_grafico-font;
+    src: url("./flaticon_grafico.woff2?7565a48d22f3f23ba812aadfd6805d29") format("woff2"),
+url("./flaticon_grafico.woff?7565a48d22f3f23ba812aadfd6805d29") format("woff"),
+url("./flaticon_grafico.eot?7565a48d22f3f23ba812aadfd6805d29#iefix") format("embedded-opentype"),
+url("./flaticon_grafico.ttf?7565a48d22f3f23ba812aadfd6805d29") format("truetype"),
+url("./flaticon_grafico.svg?7565a48d22f3f23ba812aadfd6805d29#flaticon_grafico") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_grafico !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_grafico-map: (
+    "area-stacked": "\f101",
+    "area-stacked": "\f102",
+    "area": "\f103",
+    "bubble": "\f104",
+    "column-horizontal": "\f105",
+    "column": "\f106",
+    "column-horizontal-normalised": "\f107",
+    "column-horizontal-stacked": "\f108",
+    "column-normalised": "\f109",
+    "column-stacked": "\f10a",
+    "combination-custom": "\f10b",
+    "combination-bar-line": "\f10c",
+    "combination-bar-area": "\f10d",
+    "doughnut": "\f10e",
+    "histogram": "\f10f",
+    "line": "\f110",
+    "scatter": "\f111",
+    "pie": "\f112",
+    "menos-linea-recta-horizontal": "\f113",
+);
+
+.flaticon-area-stacked:before {
+    content: map-get($flaticon_grafico-map, "area-stacked");
+}
+.flaticon-area-stacked:before {
+    content: map-get($flaticon_grafico-map, "area-stacked");
+}
+.flaticon-area:before {
+    content: map-get($flaticon_grafico-map, "area");
+}
+.flaticon-bubble:before {
+    content: map-get($flaticon_grafico-map, "bubble");
+}
+.flaticon-column-horizontal:before {
+    content: map-get($flaticon_grafico-map, "column-horizontal");
+}
+.flaticon-column:before {
+    content: map-get($flaticon_grafico-map, "column");
+}
+.flaticon-column-horizontal-normalised:before {
+    content: map-get($flaticon_grafico-map, "column-horizontal-normalised");
+}
+.flaticon-column-horizontal-stacked:before {
+    content: map-get($flaticon_grafico-map, "column-horizontal-stacked");
+}
+.flaticon-column-normalised:before {
+    content: map-get($flaticon_grafico-map, "column-normalised");
+}
+.flaticon-column-stacked:before {
+    content: map-get($flaticon_grafico-map, "column-stacked");
+}
+.flaticon-combination-custom:before {
+    content: map-get($flaticon_grafico-map, "combination-custom");
+}
+.flaticon-combination-bar-line:before {
+    content: map-get($flaticon_grafico-map, "combination-bar-line");
+}
+.flaticon-combination-bar-area:before {
+    content: map-get($flaticon_grafico-map, "combination-bar-area");
+}
+.flaticon-doughnut:before {
+    content: map-get($flaticon_grafico-map, "doughnut");
+}
+.flaticon-histogram:before {
+    content: map-get($flaticon_grafico-map, "histogram");
+}
+.flaticon-line:before {
+    content: map-get($flaticon_grafico-map, "line");
+}
+.flaticon-scatter:before {
+    content: map-get($flaticon_grafico-map, "scatter");
+}
+.flaticon-pie:before {
+    content: map-get($flaticon_grafico-map, "pie");
+}
+.flaticon-menos-linea-recta-horizontal:before {
+    content: map-get($flaticon_grafico-map, "menos-linea-recta-horizontal");
+}
